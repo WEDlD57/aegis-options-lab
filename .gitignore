@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.DS_Store
+artifacts/runs/
+artifacts/audit.jsonl
+artifacts/trades.csv
+artifacts/replay.json
+artifacts/.gif-frames/
+artifacts/preview.png
+artifacts/mobile-preview.png
+node_modules/
+package-lock.json

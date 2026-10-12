@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aegis-options-lab"
+version = "1.0.0"
+description = "A deterministic options exchange, market maker, and risk replay laboratory"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Bhavya Bhavsar"}]
+dependencies = []
+
+[project.scripts]
+aegis = "aegis.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+aegis = ["templates/*.html", "templates/*.js"]
