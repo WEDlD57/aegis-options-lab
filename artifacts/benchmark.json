@@ -1,0 +1,133 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "suite_timings": [
+    {
+      "scenario": "normal",
+      "policy": "aegis",
+      "wall_seconds": 0.9911833109999861,
+      "processed_events": 32072,
+      "events_per_second": 32357.284110890814
+    },
+    {
+      "scenario": "normal",
+      "policy": "unhedged",
+      "wall_seconds": 0.9193142829999488,
+      "processed_events": 31803,
+      "events_per_second": 34594.262906716714
+    },
+    {
+      "scenario": "normal",
+      "policy": "symmetric",
+      "wall_seconds": 0.6155668379997223,
+      "processed_events": 19824,
+      "events_per_second": 32204.463879857256
+    },
+    {
+      "scenario": "normal",
+      "policy": "delayed",
+      "wall_seconds": 1.0966645839998819,
+      "processed_events": 33876,
+      "events_per_second": 30890.02826775306
+    },
+    {
+      "scenario": "trend",
+      "policy": "aegis",
+      "wall_seconds": 0.9213605410000127,
+      "processed_events": 32009,
+      "events_per_second": 34741.014592678934
+    },
+    {
+      "scenario": "trend",
+      "policy": "unhedged",
+      "wall_seconds": 0.9414169560000119,
+      "processed_events": 31735,
+      "events_per_second": 33709.82410900999
+    },
+    {
+      "scenario": "trend",
+      "policy": "symmetric",
+      "wall_seconds": 0.4710282820001339,
+      "processed_events": 14544,
+      "events_per_second": 30877.12682185794
+    },
+    {
+      "scenario": "trend",
+      "policy": "delayed",
+      "wall_seconds": 1.1253781159998653,
+      "processed_events": 33834,
+      "events_per_second": 30064.56187389026
+    },
+    {
+      "scenario": "vol_shock",
+      "policy": "aegis",
+      "wall_seconds": 0.5627130960001523,
+      "processed_events": 18468,
+      "events_per_second": 32819.56672285267
+    },
+    {
+      "scenario": "vol_shock",
+      "policy": "unhedged",
+      "wall_seconds": 0.5820831300002283,
+      "processed_events": 18325,
+      "events_per_second": 31481.757597051153
+    },
+    {
+      "scenario": "vol_shock",
+      "policy": "symmetric",
+      "wall_seconds": 0.5918373010003961,
+      "processed_events": 19273,
+      "events_per_second": 32564.69297798974
+    },
+    {
+      "scenario": "vol_shock",
+      "policy": "delayed",
+      "wall_seconds": 0.6857330409998212,
+      "processed_events": 19415,
+      "events_per_second": 28312.76727119973
+    },
+    {
+      "scenario": "feed_outage",
+      "policy": "aegis",
+      "wall_seconds": 0.5435860760003379,
+      "processed_events": 18456,
+      "events_per_second": 33952.30454723518
+    },
+    {
+      "scenario": "feed_outage",
+      "policy": "unhedged",
+      "wall_seconds": 0.5659877439998127,
+      "processed_events": 18313,
+      "events_per_second": 32355.824298566546
+    },
+    {
+      "scenario": "feed_outage",
+      "policy": "symmetric",
+      "wall_seconds": 0.4529978579998897,
+      "processed_events": 14658,
+      "events_per_second": 32357.76889700783
+    },
+    {
+      "scenario": "feed_outage",
+      "policy": "delayed",
+      "wall_seconds": 0.6638626540002406,
+      "processed_events": 19398,
+      "events_per_second": 29219.899452263766
+    }
+  ],
+  "matching": {
+    "measurement": "one IOC taker submission matching one resting order",
+    "iterations": 20000,
+    "warmup_iterations": 200,
+    "median_ns": 1632,
+    "p95_ns": 1793,
+    "p99_ns": 2294,
+    "wall_seconds_including_setup": 0.061472975,
+    "gc_enabled": true,
+    "python": "3.12.14",
+    "implementation": "CPython",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "logical_cpus": 9,
+    "scope": "Python in-process microbenchmark; no network, broker, serialization, or production latency claim"
+  }
+}
