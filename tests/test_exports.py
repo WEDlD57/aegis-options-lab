@@ -14,13 +14,13 @@ class ExportTests(unittest.TestCase):
             out=Path(directory)
             with redirect_stdout(io.StringIO()):
                 data=generate(out,42,20,("normal",),("aegis",),10)
-            html=(out/"report.html").read_text()
+            html=(out/"report.html").read_text(encoding="utf-8")
             self.assertNotIn("/*__DATA__*/",html)
             self.assertNotIn("/*__MATH__*/",html)
             self.assertNotIn("<script src=",html)
             self.assertNotIn("fetch(",html)
-            self.assertEqual(json.loads((out/"replay.json").read_text()),data)
-            records=[json.loads(line) for line in (out/"audit.jsonl").read_text().splitlines()]
+            self.assertEqual(json.loads((out/"replay.json").read_text(encoding="utf-8")),data)
+            records=[json.loads(line) for line in (out/"audit.jsonl").read_text(encoding="utf-8").splitlines()]
             self.assertTrue(records)
             self.assertTrue(all(row["policy"]=="aegis" for row in records))
             self.assertGreater((out/"trades.csv").stat().st_size,100)
